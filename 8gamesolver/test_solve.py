@@ -63,15 +63,6 @@ def test_solve_5():
     moveboard(s.res[1], a)
 
 def test_solve_6():
-    a = board([1,2,3,0,4,6,7,5,8])
-    b = board([1,2,3,4,5,6,7,8,0])
-    print('a', a, 'b', b, sep ='\n')
-    s = solve.solver(a, b)
-    print("solved in ", len(s.res[1]))
-    moveboard(s.res[1], a)
-
-
-def test_solve_7():
     from random import shuffle
     org = [i for i in range(9)]
     shuffle(org)
@@ -92,7 +83,9 @@ def moveboard(moves, board):
         board.move(move)
         print(board)
 
-# solve3 = test_solve_3()
-# solve4 = test_solve_4()
+#test_solve_3()
+#test_solve_4()
 #test_solve_5()
-test_solve_6()
+#test_solve_5()
+#test_solve_6()
+
