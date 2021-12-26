@@ -44,7 +44,7 @@ class board:
         s_row, s_col = self.sqaureOf(row, col)
         for rowitr in range(s_row, s_row+3):
             for colitr in range(s_col, s_col+3):
-                print(rowitr, colitr)
+                # print(rowitr, colitr)
                 if cond(rowitr, colitr):
                     return False
 
